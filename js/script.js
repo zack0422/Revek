@@ -26,4 +26,7 @@ $('a[href^="#"]').on("click", function () {
   let target = $("#" == id ? "html" : id);
   let position = $(target).offset().top - header;
   $("html, body").animate({ scrollTop: position }, speed);
+  $(".drawer_icon").removeClass("is_active");
+  $(".drawer_icon_cross").removeClass("is_active");
+  $(".drawer_content").removeClass("is_active");
 });
